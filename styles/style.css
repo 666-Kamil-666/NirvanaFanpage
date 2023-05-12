@@ -1,0 +1,218 @@
+:root {
+    font-size: 10px;
+    font-family: monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "ct1 ct1 ct2"
+    "ct3 ct3 ct2"
+    "footer footer footer";
+    grid-template-rows: 10vh repeat(2, 400px) 10vh;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header {
+    background-color: black;
+    border-bottom: 10px solid yellow;
+
+    display: grid;
+    grid-area: header;
+    align-content: center;
+    justify-content: space-between;
+    column-gap: 200px;
+    grid-template-areas: "logo nav nav nav";
+}
+
+.header img {
+    width: 45px;
+    justify-self: start;
+    margin-left: 20px;
+}
+
+.header nav {
+    grid-area: nav;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.header li a {
+    text-decoration: none;
+    color: rgb(254, 254, 98);
+    font-size: 2.5rem;
+}
+
+.header li a:hover {
+    color: rgb(255, 255, 0);
+    text-decoration: line-through;
+    transition: 0.6s;
+}
+
+.first-section {
+    background: url(../assets/zespol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px solid black;
+
+    display: grid;
+    grid-area: ct1;
+}
+
+.secound-section {
+    background-color: black;
+    border: 10px solid yellow;
+    color: yellow;
+    padding: 1rem;
+    font-size: 1.5rem;
+    overflow-y: scroll;
+
+
+
+    display: grid;
+    grid-area: ct2;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.third-section {
+    background-color: black;
+    border: 10px solid #0e446c;
+    padding: 3rem;
+    overflow-y: scroll;
+
+    display: grid;
+    grid-area: ct3;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+    "audio audio audio"
+    "one one one"
+    "one one one";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.third-section .one {
+    grid-area: one;
+    color: #0e446c;
+    justify-self: center;
+    align-self: self-start;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.third-section .audio {
+    grid-area: audio;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+.footer {
+    background-color: yellow;
+    border: 10px solid black;
+
+    display: grid;
+    grid-area: footer;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+    "one button two";
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.footer a {
+    display: grid;
+    grid-area: button;
+    text-decoration: none;
+}
+
+.footer .footer-button {
+    background-color: yellow;
+    color: black;
+    border: 3px solid black;
+    font-family: monospace;
+    font-size: 1.6rem;
+}
+
+.footer .footer-button:hover {
+    background-color: black;
+    color: yellow;
+    border: 3px solid yellow;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.footer .one {
+    grid-area: one;
+    justify-self: center;
+    align-self: center;
+}
+
+.footer .two {
+    grid-area: two;
+    justify-self: center;
+    align-self: center;
+}
+
+@media all and (max-width:1110px) {
+    .first-section {
+        background: url(../assets/zespol2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media all and (max-width: 645px) {
+    body {
+        grid-template-areas:
+        "header header"
+        "ct1 ct1"
+        "ct2 ct2"
+        "ct3 ct3"
+        "footer footer";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 70px repeat(3, 400px) 70px;
+    }
+
+    .header {
+        column-gap: 0;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 537px) {
+    .header img {
+        align-self: center;
+    }
+
+    .header li a {
+        font-size: 1.8rem;
+    }
+}
+
+@media all and (max-width: 460px) {
+    .header img {
+        align-self: center;
+    }
+
+    .header li a {
+        font-size: 1.4rem;
+    }
+}

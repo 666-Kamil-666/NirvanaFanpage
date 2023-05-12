@@ -1,0 +1,83 @@
+/* AUDIO trzecia sekcja */
+.third-section .audio audio::-webkit-media-controls-panel {
+    background-color: #0e446c;
+}
+.third-section .audio audio::-webkit-media-controls-current-time-display {
+    color: yellow;
+}
+.third-section .audio audio::-webkit-media-controls-time-remaining-display {
+    color: yellow;
+}
+
+
+/* SCROLLBAR body */
+body::-webkit-scrollbar {
+    width: 1.5rem;
+}
+body::-webkit-scrollbar-track {
+    border-left: 1px solid black;
+}
+body::-webkit-scrollbar-thumb {
+    background: #0e446c;
+}
+
+/* SCROLLBAR druga sekcja */
+.secound-section::-webkit-scrollbar {
+    width: 0.6rem;
+}
+.secound-section::-webkit-scrollbar-track {
+    border-left: 1px solid #000;
+}
+.secound-section::-webkit-scrollbar-thumb {
+    background: yellow;
+}
+
+
+
+/* SCROLLBAR trzecia sekcja */
+.third-section::-webkit-scrollbar {
+    width: 0.6rem;
+}
+.third-section::-webkit-scrollbar-track {
+    border-left: 1px solid #000;
+}
+.third-section::-webkit-scrollbar-thumb {
+    background: #0e446c;
+}
+
+
+
+/* SCROLLBAR kurt */
+.kurt::-webkit-scrollbar {
+    width: 0.6rem;
+}
+.kurt::-webkit-scrollbar-track {
+    border-left: 1px solid #000;
+}
+.kurt::-webkit-scrollbar-thumb {
+    background: darkred;
+}
+
+
+/* SCROLLBAR krist */
+.krist::-webkit-scrollbar {
+    width: 0.6rem;
+}
+.krist::-webkit-scrollbar-track {
+    border-left: 1px solid #000;
+}
+.krist::-webkit-scrollbar-thumb {
+    background: #0e446c;
+}
+
+
+/* SCROLLBAR dave */
+.dave::-webkit-scrollbar {
+    width: 0.6rem;
+}
+.dave::-webkit-scrollbar-track {
+    border-left: 1px solid #000;
+}
+.dave::-webkit-scrollbar-thumb {
+    background: #0e446c;
+}
